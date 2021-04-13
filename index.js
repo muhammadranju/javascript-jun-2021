@@ -1404,3 +1404,16 @@
 // for (let x = 0; x < myObj.length; x++) {
 //     console.log(`${x} : ${myObj[x]}`);
 // }
+let myNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let mySelf = [
+    "Md Ranju ",
+    "I am a Student",
+    "I am Read In 12 Calass ",
+    "My Familly Mamber is 8 Parsion",
+    "My Country Bangladesh",
+    "Now I am Live in Rajshahi",
+    "My Area is Name Is Shreerampur (IslamPur)",
+];
+for (let x = 01; x < mySelf.length; x++) {
+    console.log(mySelf[x]);
+}
