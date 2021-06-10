@@ -1,3 +1,4 @@
+"use strict";
 // const myName = "Md Ranju Islam";
 // const myAge = 18;
 // const iamIs = true;
@@ -551,8 +552,8 @@
 // var firstNumber = parseFloat(prompt("Enter 1st your number"));
 // var secondNumber = parseFloat(prompt("Enter 2nd your number"));
 
-// // firstNumber = parseInt(firstNumber, 10);
-// // secondNumber = parseInt(secondNumber, 10);
+// firstNumber = parseInt(firstNumber, 10);
+// secondNumber = parseInt(secondNumber, 10);
 // var sub;
 
 // /*---------------Addition---------------*/
@@ -659,13 +660,13 @@
 // let num = prompt("Enter your number");
 
 // if (num % 2 == 0) {
-//     // console.log(`Your code is Even ${num} divided`);
+// console.log(`Your code is Even ${num} divided`);
 //     document.write(`You can do divided "${num}" is Even => জোড়`);
 // } else if (num > 0) {
 //     document.write(`Your number is "${num}" is Odd => জিরো`);
 // } else {
 //     document.write(`You can't do divided "${num}" is Odd => বিজোড়`);
-//     // console.log(`Your cdde is Odd ${num} not divided`);
+// console.log(`Your cdde is Odd ${num} not divided`);
 // }
 
 // let restul = prompt("Enter your Masck");
@@ -1172,8 +1173,8 @@
 
 // let myPara = document.querySelector("#paraId");
 // function addStyle() {
-//     // myPara.style.color = "red";
-//     // myPara.style.fontSize = "50px";
+// myPara.style.color = "red";
+// myPara.style.fontSize = "50px";
 //     myPara.classList.add("para-style");
 // }
 
@@ -1189,7 +1190,7 @@
 // myBtn.addEventListener(
 //     "click",
 //     (myFun = () => {
-//         // paraId.style.color = "red";
+// paraId.style.color = "red";
 //         paraId.classList.add("para-style");
 //     })
 // );
@@ -1202,11 +1203,11 @@
 
 // let padraGraph = document.querySelector("#paragraph");
 // padraGraph.addEventListener("mouseover", () => {
-//     // padraGraph.style.cursor = "pointer";
+// padraGraph.style.cursor = "pointer";
 //     padraGraph.classList.add("para-style");
 // });
 // padraGraph.addEventListener("mouseout", () => {
-//     // padraGraph.style.cursor = "pointer";
+// padraGraph.style.cursor = "pointer";
 //     paraId.style.transition = " all 0.3s ease 0s";
 //     padraGraph.classList.remove("para-style");
 // });
@@ -1354,7 +1355,7 @@
 //         age,
 //     };
 // };
-// // console.log(myObj("Md Ranju", 19));
+// console.log(myObj("Md Ranju", 19));
 
 // const myAbout = {
 //     myName() {
@@ -1391,7 +1392,7 @@
 //     salary: "Taka nai FaKa",
 // };
 
-// //* object is not soppot for of loop  // soppot only for in loop
+//* object is not soppot for of loop  // soppot only for in loop
 
 // for (let x of myObj) {
 //     console.log(x);
@@ -1404,16 +1405,851 @@
 // for (let x = 0; x < myObj.length; x++) {
 //     console.log(`${x} : ${myObj[x]}`);
 // }
-let myNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let mySelf = [
-    "Md Ranju ",
-    "I am a Student",
-    "I am Read In 12 Calass ",
-    "My Familly Mamber is 8 Parsion",
-    "My Country Bangladesh",
-    "Now I am Live in Rajshahi",
-    "My Area is Name Is Shreerampur (IslamPur)",
-];
-for (let x = 01; x < mySelf.length; x++) {
-    console.log(mySelf[x]);
-}
+// let myNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let mySelf = [
+//     "Md Ranju ",
+//     "I am a Student",
+//     "I am Read In 12 Calass ",
+//     "My Familly Mamber is 8 Parsion",
+//     "My Country Bangladesh",
+//     "Now I am Live in Rajshahi",
+//     "My Area is Name Is Shreerampur (IslamPur)",
+// ];
+// for (let x = 0; x < mySelf.length; x++) {
+//     console.log(`${x} : ${mySelf[x]}`);
+// }
+
+// mySelf.forEach(function (value, kye) {
+//     console.log(`${kye} : ${value}`);
+// });
+
+// let myNumber = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+// let newNumber = [];
+// myNumber.forEach(function (value, index, arr) {
+// arr[index] = value * 2;
+//     newNumber.push(value % value);
+// });
+// console.log(newNumber);
+
+// let students = [
+//     {
+//         id: 101,
+//         name: "Md Ranju",
+//         gpa: 2.65,
+//     },
+//     {
+//         id: 102,
+//         name: "Md Amin",
+//         gpa: 2.45,
+//     },
+//     {
+//         id: 103,
+//         name: "Md Hossain",
+//         gpa: 4.81,
+//     },
+//     {
+//         id: 104,
+//         name: "Md Islam",
+//         gpa: 3.72,
+//     },
+// ];
+
+// const restul = () => {
+//     return students
+//         .filter((value) => {
+//             return value.gpa >= 2.5;
+//         })
+//         .map((y) => {
+//             return y.id + " : " + y.name + " : " + y.gpa;
+//         });
+// };
+// console.log(restul());
+
+// setInterval(() => {
+//     const time = document.querySelector("#time");
+
+//     let date = new Date();
+//     let hour = date.getHours();
+//     let minute = date.getMinutes;
+//     let second = date.getSeconds;
+//     let day_night = "AM";
+
+//     if (hour > 12) {
+//         day_night = "PM";
+//         hour = hour - 12;
+//     }
+//     if (second < 10) {
+//         second = "0" + second;
+//     }
+//     if (minute < 10) {
+//         minute = "0" + minute;
+//     }
+//     if (hour < 10) {
+//         hour = "0" + hour;
+//     }
+
+//     time.textContent = `${hour}:${minute}:${second}:${day_night}`;
+// });
+
+// setInterval(() => {
+//     const time = document.querySelector("#time");
+
+//     let date = new Date();
+//     let hour = date.getHours();
+//     let minute = date.getMinutes();
+//     let second = date.getSeconds();
+//     let D_N = "AM";
+//     if (hour > 12) {
+//         D_N = "PM";
+//         hour = hour - 12;
+//     }
+//     if (second < 10) {
+//         second = "0" + second;
+//     }
+//     if (minute < 10) {
+//         minute = "0" + minute;
+//     }
+//     if (hour < 10) {
+//         hour = "0" + hour;
+//     }
+
+//     time.textContent = `${hour}:${minute}:${second}:${D_N}`;
+// });
+// console.log("Hello World!");
+
+// let myNumber = "6";
+// let myNumber2 = 2;
+// let newNumber = Number.parseInt(myNumber);
+// let res = newNumber + myNumber2;
+
+// let str = myNumber2.toString();
+// console.log(typeof newNumber);
+// console.log(typeof str);
+// console.log(res);
+
+// console.log(Boolean(-0));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+
+// console.log(Boolean(25));
+// console.log(Boolean("hfj"));
+
+// let a = 10;
+// let b = 6;
+// console.log(a % b);
+// let mySum = 20;
+
+// console.log(Math.E);
+
+// let passCap = [
+//     "A",
+//     "B",
+//     "C",
+//     "D",
+//     "E",
+//     "F",
+//     "G",
+//     "H",
+//     "I",
+//     "J",
+//     "K",
+//     "L",
+//     "M",
+//     "N",
+//     "O",
+//     "P",
+//     "Q",
+//     "R",
+//     "S",
+//     "T",
+//     "U",
+//     "V",
+//     "W",
+//     "X",
+//     "Y",
+//     "Z",
+// ];
+// let passSml = [
+//     "a",
+//     "b",
+//     "c",
+//     "d",
+//     "e",
+//     "f",
+//     "g",
+//     "h",
+//     "i",
+//     "j",
+//     "k",
+//     "l",
+//     "m",
+//     "n",
+//     "o",
+//     "p",
+//     "q",
+//     "r",
+//     "s",
+//     "t",
+//     "u",
+//     "v",
+//     "w",
+//     "x",
+//     "y",
+//     "z",
+// ];
+// let passNum = [0, 1, 2, 3, 4, 5, 6, , 7, 8, 9];
+// let passHas = [
+//     "~",
+//     "!",
+//     "@",
+//     "#",
+//     "$",
+//     "%",
+//     "^",
+//     "&",
+//     "*",
+//     "(",
+//     ")",
+//     "_",
+//     "-",
+//     "=",
+//     "=",
+//     "{",
+//     "}",
+//     "[",
+//     "]",
+//     ";",
+//     "'",
+//     "<",
+//     ">",
+//     "|",
+//     ":",
+//     "/",
+//     "+",
+// ];
+
+// let allArr = passCap + passSml + passNum + passHas;
+
+// for (let i = 0; i < allArr.length; i++) {
+//     console.log(Math.round(Math.random(allArr[i]) * allArr.length + 1));
+// }
+// console.log(Math.random(passCap));
+
+// let abcl = 4.568;
+// console.log(Math.abs(abcl));
+// console.log(Math.floor(abcl));
+// console.log(Math.ceil(abcl));
+// console.log(Math.round(abcl));
+// console.log(Math.pow(2, 3));
+// console.log(Math.pow(2, 5));
+
+// let date = new Date();
+// console.log(date.toLocaleString());
+// console.log(date.toDateString());
+// console.log(date.toTimeString());
+
+// console.log(date.getFullYear());
+// console.log(date.getMonth() + 1);
+// console.log(date.getHours() - 12);
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+
+// let hours = date.getHours() - 12;
+// let minutes = date.getMinutes();
+// let seconds = date.getSeconds();
+// let days = date.getDate();
+// let month = date.getMonth() + 1;
+// let year = date.getFullYear();
+
+// console.log(`${hours}:${minutes}:${seconds}  ${days}/${month}/${year}`);
+
+// let a = -2.25611;
+// let b = -2;
+
+// if (a > b) {
+//     console.log("A is gaterdan number B");
+// } else if (b > a) {
+//     console.log("B is gaterdan number A");
+// } else if (a === b) {
+//     console.log("Ther are is same number");
+// } else {
+//     console.log("Not matching");
+// }
+
+// let num = 1.3;
+// if (num % 2 === 0) {
+//     console.log(num + " is Even number");
+// } else if (num % 2 == 1) {
+//     console.log(num + " is Odd number");
+// } else {
+//     console.log("Not Match anyone");
+// }
+
+// let nums = 0;
+// if (nums % 2 === 0) {
+//     console.log(nums + " is Even number");
+// } else if (nums % 2 == 1) {
+//     console.log(nums + " is Odd number");
+// } else if (nums === 0) {
+//     console.log(nums + " is zero number");
+// } else {
+//     console.log(nums + " is Not Match");
+// }
+
+// let date = new Date();
+// let today = date.getDay();
+
+// if (today === 0) {
+//     console.log("Today is Sunday");
+// } else if (today === 1) {
+//     console.log("Today is Monday");
+// } else if (today === 2) {
+//     console.log("Today is Tuesday");
+// } else if (today === 3) {
+//     console.log("Today is Wednesday");
+// } else if (today === 4) {
+//     console.log("Today is Thursday");
+// } else if (today === 5) {
+//     console.log("today is Friday");
+// } else if (today === 6) {
+//     console.log("Today is Saturday");
+// } else {
+//     console.log("Your day is not found");
+// }
+
+// switch (today) {
+//     case 0:
+//         console.log("Today is Sunday");
+//         break;
+//     case 1:
+//         console.log("Today is Monday");
+//         break;
+//     case 2:
+//         console.log("Today is Tuesday");
+//         break;
+//     case 3:
+//         console.log("Today is Wednesday");
+//         break;
+//     case 4:
+//         console.log("Today is Thursday");
+//         break;
+//     case 5:
+//         console.log("Today is Friday");
+//         break;
+//     case 6:
+//         console.log("Today is Saturday");
+//         break;
+//     default:
+//         console.log("Your day is not found");
+// }
+
+// let a = 10;
+// let b = 20;
+// let c = 10;
+// let d = 40;
+
+// if (a > b && c > d) {
+//     console.log("A is gather than B and C is gather than D");
+// } else {
+//     console.log("Not matching some one");
+// }
+
+// if (a > b || c > d) {
+//     console.log("A is gather than B or C is gather than D");
+// } else {
+//     console.log("Not matching some one");
+// }
+
+// if (!(a > b) && !(c > d)) {
+//     console.log("A is gather than B or C is gather than D");
+// } else {
+//     console.log("Not matching some one");
+// }
+
+// let n = 3;
+// let even = "";
+// let odd = "";
+
+// n % 2 === 0 ? (even = `${n} is EVEN NUMBER`) : (odd = `${n} is ODD NUMBER`);
+// console.log(even + odd);
+
+// for (let a = 0; a < 10; a++) {
+//     console.log(a + 1 + " AMIN || HOOSAIN");
+// }
+
+// let i = 0;
+// while (i < 10) {
+//     console.log(i + 1 + " AMIN || HOOSAIN");
+//     i++;
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//     if (i === 0) {
+//         console.log(i + " is not any number");
+//     } else if (i % 2 === 0) {
+//         console.log(i + " EVEN");
+//     } else if (i % 2 === 1) {
+//         console.log(i + " ODD");
+//     }
+// }
+
+//*this is filter for loop is use on find your item
+// let myArr = [1, 2, 3, 4, 5, 6, 5, 9, 4, 6, 5, 45, 598, 31];
+// let myArr = ["Md", "Mosharof Hossain", "Md Ranju", "Amin Hossain", "Ranju"];
+
+// let find = "Amin Hossain";
+// let isfound = false;
+// for (let i = 0; i < myArr.length; i++) {
+//     if (myArr[i] === find) {
+//         console.log(`${myArr[i]} is found index is ${i}`);
+//         isfound = true;
+//         break;
+//     }
+// }
+// if (!isfound) {
+//     console.log("Data not found " + find);
+// }
+
+// let num = [1, 2, 3, 4, 5, 6, 74, 8, 9];
+
+// let rev = num.reverse();
+// console.log(rev);
+
+// console.log(num, ...num);
+// let i = 0;
+// while (i <= 100) {
+//     console.log(i + " Sorry");
+//     i++;
+// }
+
+// let myObj = {
+//     myName: "Md Ranju",
+//     myAge: 19,
+//     myStaduey: "12th",
+//     myWork: "Design",
+// };
+// console.log(myObj);
+// let myArr = [
+//     "My Name is Md Ranju Islam",
+//     "My Father Name is Md Mosharof Hossain",
+//     "My Mather Name is MST Modina Khatun",
+//     "My Brather Name is Md Momin Islam",
+//     "My Sis Name is MST Mousomi Kahtun",
+// ];
+
+// for (let i in myObj) {
+//     console.log(i + " : " + myObj[i]);
+// }
+
+// for (let x of myObj) {
+//     console.log(x);
+// }
+// for (let i = 0; i <= myArr.length; i++) {
+//     console.log(i + " : " + myArr[i]);
+// }
+
+//* Array programming
+// let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let malt = 2;
+
+// let sum = 0;
+// for (let i = 0; i < myArr.length; i++) {
+// console.log(` ${i + 1} * ${malt}  = ${myArr[i] * malt}`);
+//     console.log(i + 1 + " * " + malt + " = " + myArr[i] * malt);
+// }
+//* Array EVEn Number
+// for (let i = 0; i < myArr.length; i++) {
+//     if (myArr[i] % 2 === 0) {
+//         console.log(myArr[i]);
+//     }
+// }
+// console.log(sum);/
+
+//* Array EVEN Number
+// for (let i = 0; i < myArr.length; i++) {
+//     if (myArr[i] % 2 === 1) {
+//         console.log(myArr[i]);
+//         let res = myArr[i];
+//         for (let j = 0; j < res.length; j++) {
+//             sum = sum + res[j];
+//             console.log(res);
+//         }
+//     }
+// }
+
+// for (let i = 0; i < myArr.length; i++) {
+//     if (myArr[i] % 2 === 0) {
+// console.log(myArr[i]);
+//     }
+//     let result = myArr[i];
+//     for (let i = 0; i < result.length; i++) {
+//         sum = sum + result[i];
+//         console.log(sum);
+//     }
+// }
+
+// console.log(sum);
+// for (let i = 0; i < myArr.length; i++) {
+//     sum = sum + myArr[i];
+// }
+// console.log(sum);
+
+// let longArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// longArr.splice(3, 0, 9);
+// longArr.splice(3, 1, 55);
+// longArr.pop();
+// longArr.shift();
+// longArr.unshift(9);
+// console.log(longArr);
+
+// let myallName = [56, 24, 789, 35, 896, 04, 97, 325];
+// let find = 896;
+// let isHave = false;
+
+// for (let i = 0; i < myallName.length; i++) {
+//     if (myallName[i] === find) {
+//         console.log(`Data is found on (${find}) index is (${i})`);
+//         isHave = true;
+//         break;
+//     }
+// }
+
+// if (!isHave) {
+//     console.log(`Data not found in (${find})`);
+// }
+
+// let point = {
+//     x: 10,
+//     y: 20,
+//     z: 30,
+// };
+// point.x = 35;
+// let show = ["x"];
+// delete point.x;
+
+// console.log(point);
+
+// let point2 = {
+//     a: 20,
+//     b: 30,
+//     c: 40,
+//     d: 50,
+// };
+
+// let objPoints = "a";
+// console.log(objPoints + " : " + objPoints in point2);
+
+// if (objPoints in point2) {
+//     console.log(true + " : " + objPoints + " is here");
+// } else {
+//     console.log(false + " : " + objPoints + " is not here!");
+// }
+
+// for (let i in point2) {
+// console.log(i);
+//     console.log(i + ": " + point2[i] + ",");
+// }
+
+// let inputValue = document.getElementById("inputId");
+
+// if (inputValue.value === "") {
+//     document.getElementById("inputSpan").innerHTML = "Your name Is required";
+// }
+
+//* function programming
+
+// function add(a, b) {
+//     console.log(a + b);
+//     console.log(a - b);
+//     console.log(a * b);
+//     console.log(a / b);
+//     console.log(a % b);
+// }
+
+// add(10, 20);
+
+// let arr1 = [4, 4, 9, 4];
+// let arr2 = [5, 7, 9, 2, 3];
+// let arr3 = [85, 41, 65, 1];
+
+// function sumOfArrays(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     console.log(sum);
+// }
+// sumOfArrays(arr1);
+// sumOfArrays(arr2);
+// sumOfArrays(arr3);
+
+// let date = new Date();
+// console.log(date.getFullYear);
+
+// let date = new Date();
+// console.log(date.getFullYear());
+// console.log(date.getDate())
+// function add(a, b) {
+//     return a + b;
+// }
+// console.log(add(5, 65));
+
+// for (var i = 0; i < 10; i++) {
+//     console.log("*");
+//     for (var j = 0; j < i; j++) {
+//         console.log("*");
+//     }
+// }
+
+// let myObj = {
+//     myName: "Md Ranju",
+//     myAge: 19,
+//     myStaduey: "12th",
+//     myWork: "Design",
+// };
+
+// console.log(myObj);
+
+// let makeString = JSON.stringify(myObj);
+// console.log(makeString);
+// console.log(typeof makeString);
+
+// let makeObj = JSON.parse(makeString);
+// console.log(typeof makeString);
+// console.log(makeObj);
+
+// let myArr = [1, 2, 3, 4, 5];
+
+// let sum = 0;
+// myArr.forEach(function (value, index, array) {
+//     sum += value;
+// });
+
+// console.log(sum);
+
+// let sqrArr = myArr.map(function (value) {
+//     return Math.floor(Math.random() * 1000);
+// });
+
+// console.log(sqrArr);
+
+// function myMap(arrF, cb) {
+//     let newArr = [];
+//     for (let i = 0; i < arrF.length; i++) {
+//         let temp = cb(arrF[i], i, arrF);
+//         newArr.push(temp);
+//     }
+//     return newArr;
+// }
+
+// let qb = myMap(myArr, function (value, index, arr) {
+//     return value * value;
+// });
+
+// let malt = myMap(myArr, function (value) {
+//     return value * 10;
+// });
+
+// let divided = myMap(myArr, function (value) {
+//     return value / 10;
+// });
+
+// console.log(qb);
+// console.log(malt);
+// console.log(divided);
+
+// let myArr = [58, 96, 67, 7, 3, 6, 5, 1, 2, 4, 9, 6];
+// let val = 7;
+// let filArr = myArr.filter(function (value) {
+//     return value > val;
+// });
+
+// console.log(filArr);
+
+// let myObj = [
+//     {
+//         name: "Ranju",
+//         age: 19,
+//     },
+//     {
+//         name: "Amin",
+//         age: 18,
+//     },
+//     {
+//         name: "Hossain",
+//         age: 20,
+//     },
+//     {
+//         name: "Muhammad",
+//         age: 21,
+//     },
+//     {
+//         name: "Kal",
+//         age: 22,
+//     },
+// ];
+
+// myObj.sort((por, nag) => {
+//     if (por.name > nag.name) {
+//         return 1;
+//     } else if (por.name < nag.name) {
+//         return -1;
+//     } else {
+//         return 0;
+//     }
+// });
+
+// console.log(myObj);
+
+// myArr.sort((a, b) => {
+//     if (a > b) {
+//         return 1;
+//     } else if (a < b) {
+//         return -1;
+//     } else {
+//         return 0;
+//     }
+// });
+// console.log(myArr);
+
+// function a() {
+//     d();
+//     console.log("Hello Function A");
+// }
+
+// function b() {
+//     c();
+//     console.log("Hello Function B");
+// }
+// function c() {
+//     console.log("Hello Function C");
+// }
+// function d() {
+//     b();
+//     console.log("Hello Function D");
+// }
+
+// a();
+
+// function test() {
+//     let msg = "I am a function of Closure ";
+
+//     return function () {
+//         console.log(msg);
+//     };
+// }
+
+// let sayMsg = test();
+
+// sayMsg();
+
+// for (let i = 0; i <= 5; i++) {
+//     (function (n) {
+//         setTimeout(function () {
+//             console.log(n);
+//         }, 1000 * n);
+//     })(i);
+// }
+
+// let num1 = 25;
+// let num2 = 25;
+
+// let myCal = {
+//     add1: num1,
+//     abb2: num2,
+
+//     addiFunc: function () {
+//         return this.add1 + this.abb2;
+//     },
+//     maltFunc: function () {
+//         return this.add1 * this.abb2;
+//     },
+// };
+
+// let sub = myCal.addiFunc();
+// let man = myCal.maltFunc();
+
+// console.log(sub);
+// console.log(man);
+
+// let num = 10;
+// for (let i = 1; i <= 10; i++) {
+//     let myLoop = `${num} x${i} = ${i * num}`;
+// console.log(num + " x" + i + " = " + i * num);
+//     console.log(myLoop);
+// }
+// console.log(typeof num);
+
+// function myFunc(c, d) {
+//     console.log(this);
+//     console.log(this.a + this.b + c + d);
+// }
+// myFunc.call({ a: 66, b: 20 }, 10, 30);
+// myFunc.apply({ a: 100, b: 200 }, [10, 30]);
+
+// let testBind = myFunc.bind({ a: 100, b: 200 });
+// testBind(20, 60);
+// let a;
+// console.log(a);
+// a = 10;
+
+// let test;
+// test = "Hello Rajshahi";
+// test1 = "Hello Bangladesh";
+
+// console.log(test1, test);
+
+// let test = "Hello";
+// console.log(test);
+// let test1 = "Hello2";
+// console.log(test1);
+
+// function add(myFunc) {
+//     return myFunc();
+// }
+// console.log(
+//     add(function () {
+//         return "Hello Function";
+//     })
+// );
+
+// let mySelf = {
+//     name: "Md Ranju",
+//     age: 19,
+//     stady: "12th class",
+// };
+
+// console.log(
+//     `My Name is ${mySelf.name}, I am ${mySelf.age} years old and I am Stady in ${mySelf.stady}`
+// );
+
+// console.log(mySelf.name.padStart(14));
+// console.log(mySelf.name.padEnd(14, "*"));
+
+// function my() {
+//     console.log(this);
+// }
+// my();
+
+let myObj = {
+    name: "Md Ranju",
+    myFun: function () {
+        setTimeout(() => {
+            console.log(`Hello ${this.name}`);
+        }, 100);
+    },
+};
+
+let obj = {
+    name: "Md Ranju Islam",
+    age: 19,
+    address: "Rajshahi",
+    nowFun: function () {
+        setTimeout(() => {
+            console.log(this.name, this.age);
+        }, 100);
+    },
+};
+obj.nowFun();
