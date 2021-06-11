@@ -1,5 +1,0 @@
-{
-    "compile-hero.disable-compile-files-on-did-save-code": false,
-    "python.pythonPath": "C:\\Users\\mdran\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
-    "python.formatting.provider": "autopep8"
-}
