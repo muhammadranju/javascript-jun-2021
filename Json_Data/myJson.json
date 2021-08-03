@@ -1,0 +1,11 @@
+{
+   "name": "Md Ranju",
+   "email": "mdranju23@gmail.com",
+   "country": "Bangladesh",
+   "address": {
+      "city": "Rajshahi",
+      "stert": "Rajpara",
+      "gpo": 6000,
+      "area": "Shreerampur"
+   }
+}
