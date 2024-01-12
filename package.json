@@ -1,0 +1,36 @@
+{
+  "devDependencies": {
+    "eslint": "7.2.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^3.6.10",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadranju/JavaScript-Jun-2021.git"
+  },
+  "keywords": [],
+  "author": "MUhammad Ranju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadranju/JavaScript-Jun-2021/issues"
+  },
+  "homepage": "https://github.com/muhammadranju/JavaScript-Jun-2021#readme",
+  "description": "This is my node js projoct"
+}
