@@ -1,4 +1,11 @@
 "use strict";
+
+// const { clearConfigCache } = require("prettier");
+
+// const e = require("express");
+
+// const { text } = require("body-parser");
+
 // const myName = "Md Ranju Islam";
 // const myAge = 18;
 // const iamIs = true;
@@ -2417,7 +2424,917 @@
 // }
 // samson1(1, 2, 3, 4, 5);
 
-function add(a, b, c) {
-    console.log("A:" + a + " B:" + b + " C:" + c);
-}
-add(1, 2);
+// function add(a, b, c) {
+//     console.log("A:" + a + " B:" + b + " C:" + c);
+// }
+// add(1, 2);
+
+// function add(a, b, c) {
+//     console.log("A:" + a + " B:" + b + " C:" + c);
+// }
+// add(1, 2, 3);
+
+// function parson(name, email) {
+//     return `Name is ${name} and Email is ${email}`;
+// }
+
+// console.log(parson("Md Ranju", "mdranju23@gmail.com"));
+
+// let addtiton = function (name, email) {
+//     return `Name is ${name} and Email is ${email}`;
+// };
+// console.log("Loding...");
+// setTimeout(function () {
+//     console.log(addtiton("Mdranju", "mdranju23@gmail"));
+//     console.log("Suscessfuly loaded...");
+// }, 5000);
+
+// function samthing(sayNow, name) {
+//     function sayHi() {
+//         console.log(sayNow + " " + name);
+//     }
+//     sayHi();
+// }
+// samthing("Hello", "Ranju");
+
+// function samthing(sayNow, name) {
+//     function sayHi() {
+//         if (name) {
+//             return name.split(" ")[0];
+//         } else {
+//             return "";
+//         }
+//     }
+//     let massage = sayNow + " " + sayHi();
+//     console.log(massage);
+// }
+// samthing("Good Morning", "Ranju Islam");
+
+// let myName = "Md Ranju";
+// let spName = myName.split(" ")[0];
+// console.log(spName);
+
+// if (true) {
+//     var a = "md Ranju Islam";
+// }
+// for (let i = 0; i < 10; i++) {
+//     var name = "Muhammad Ranju";
+// }
+
+// console.log(name);
+// console.log(a);
+// const myName = "Md Amin";
+// function add() {
+//     const myName = "Md Ranju";
+//     console.log(myName);
+// }
+// add();
+// console.log(myName);
+// {
+//     var myName = "Ranju";
+// }
+
+// console.log(myName);
+
+// function test(num) {
+//     function y() {
+//         return num % 3 === 0;
+//     }
+//     function z() {
+//         return num % 5 === 0;
+//     }
+//     if (y() && z()) {
+//         console.log(num + " The same number");
+//     } else {
+//         console.log("Not a valid number");
+//     }
+// }
+// test(30);
+
+// let number = [1, 2, 3, 4];
+
+// //*Nurmal Higer Order Function
+// let result = [];
+// for (let i = 0; i < number.length; i++) {
+//     result.push(number[i] * 2);
+// }
+// console.log(result);
+
+// //*ForEach Higer Order Function
+// let result3 = [];
+// number.forEach((value) => {
+//     result3.push(value * 2);
+// });
+// console.log(result3);
+
+// //*Letest Higer Order Function
+// let result2 = number.map((value) => value * 2);
+// console.log(result2);
+
+// function add(a, b, cb) {
+//     console.log("Loding...");
+//     setTimeout(() => {
+//         console.log(`This is ${a} + ${b} = ${a + b}`);
+//     }, 2000);
+//     cb();
+// }
+
+// function massage() {
+//     setTimeout(() => {
+//         console.log("Addition Done");
+//     }, 3000);
+// }
+// add(1, 2, massage);
+
+// function sempal(a, b, cb) {
+//     let c = a + b;
+//     let d = a - b;
+//     let result = cb(c, d);
+//     return result;
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// let newAdd = sempal(5, 3, add);
+// console.log(newAdd);
+
+// let newAdd2 = sempal(5, 4, (g, h) => g * h);
+// console.log(newAdd2);
+
+// let array = [1, 2, 3, 4, 5];
+
+// function forEach(array, callback) {
+//     for (let i = 0; i < array.length; i++) {
+//         callback(array[i], i, array);
+//     }
+// }
+
+// let sum = 0;
+// forEach(array, (value, index, arr) => {
+//     console.log(value, index, arr);
+//     sum += value;
+// });
+// console.log(sum);
+
+// let array2 = [];
+// forEach(array, (value, index, arr) => {
+//     array2.push(value * 2);
+//     array[index] = value + 5;
+// });
+// console.log(array2);
+
+// let array = [1, 2, 3, 4, 5];
+
+// function myMap(arr, callback) {
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let result = callback(arr[i], i, arr);
+//         newArr.push(result);
+//     }
+//     return newArr;
+// }
+// let myarrMap = myMap(array, function (value) {
+//     return value * value * value;
+// });
+// console.log(myarrMap);
+
+// let myArray = [1, 2, 3, 4, 5, 7, 6, 2, 5, 9, 1];
+
+// function myFilter(array, cb) {
+//     let newArr = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (cb(array[i], i, array)) {
+//             newArr.push(array[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+// let filter = myFilter(myArray, function (value) {
+//     if (value == 0) {
+//         console.log("Value Acha");
+//     }
+// });
+// console.log(filter);
+
+// let allArr = myArray.filter(function (value) {
+//     return value % 2 == 1;
+// });
+
+// console.log(allArr);
+
+// function(array, cb, acc) {
+//     for(let i = 0; i < array.length; i++){
+
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let sum = arr.reduce(function (prev, curr) {
+//     return Math.max(prev, curr);
+// }, 0);
+// console.log(sum);
+
+// let findArr = arr.find((value) => {
+//     return value === 3;
+// });
+// console.log(findArr + " Yes Your number is here");
+
+// function myFind(arr, cb) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (cb(arr[i])) {
+//             return arr[i];
+//         }
+//     }
+// }
+
+// let arrs = myFind(arr, (value) => {
+//     return value === 2;
+// });
+// console.log(arrs);
+
+// let myArray = [1, 2, 3, 4, -8, 5, 7, -2, 6, 2, -5, 5, 9, 1];
+
+// myArray.sort();
+// // console.log(myArray);
+
+// let parsons = [
+//     {
+//         name: "Md Ranju",
+//         age: 19,
+//     },
+//     {
+//         name: "Md AminHossain",
+//         age: 18,
+//     },
+//     {
+//         name: "Md Amin",
+//         age: 17,
+//     },
+//     {
+//         name: "Md Hossain",
+//         age: 16,
+//     },
+// ];
+// myArray.sort((a, b) => {
+//     if (a > b) {
+//         return 1;
+//     } else if (a < b) {
+//         return -1;
+//     } else {
+//         return 0;
+//     }
+// });
+
+// console.log(myArray);
+// parsons.sort((a, b) => {
+//     if (a.age > a.age) {
+//         return 1;
+//     } else if (a.age < b.age) {
+//         return -1;
+//     } else {
+//         return 0;
+//     }
+// });
+// console.log(parsons);
+
+// function greet(msg) {
+//     function greeting(name) {
+//         return msg + ", " + name + "!";
+//     }
+//     return greeting;
+// }
+
+// let newGreet = greet("Hello");
+
+// let newGreet2 = newGreet("Ranju");
+
+// console.log(newGreet2);
+
+// function base(b) {
+//     return function (n) {
+//         let result = 1;
+//         for (let i = 0; i < b; i++) {
+//             result *= n;
+//         }
+//         return result;
+//     };
+// }
+
+// let base10 = base(10);
+// console.log(base10(2));
+
+// let numbers = 5;
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${numbers} x ${i} = ${numbers * i}`);
+// }
+
+// function hiMan(N) {
+//     if (N === 0) {
+//         return;
+//     }
+//     console.log("I am Calling");
+//     hiMan(N - 1);
+// }
+
+// hiMan(10);
+
+// let sum = 0;
+// for (let i = 1; i <= 5; i++) {
+//     sum += i;
+// }
+// console.log(sum);
+// for (let i = 1; i <= 10; i++) {
+//     console.log("Hi, I am Md Ranju");
+// }
+
+// function a() {
+//     b();
+//     console.log("Hello I am A Function");
+// }
+// function b() {
+//     d();
+//     console.log("Hello I am B Function");
+// }
+
+// function c() {
+//     console.log("Hello I am C Function");
+// }
+// function d() {
+//     c();
+//     console.log("Hello I am D Function");
+// }
+// a();
+
+// function a() {
+//     console.log("Hello I am A Function");
+// }
+// a();
+
+// if (true) {
+//     const a = 55;
+// }
+// console.log(a);
+
+// function ab(n, r, m) {
+//     c();
+//     function c() {
+//         d();
+//         function d() {
+//             f(uf());
+//             function f(j) {
+//                 g();
+//                 function g() {
+//                     console.log(
+//                         `this is parameter number ${n}, this is outsit function ${r} ${m} ${j}`
+//                     );
+//                 }
+//             }
+//         }
+//     }
+// }
+// let a = 55;
+
+// function uf() {
+//     let name = "Md Ranju";
+//     return name;
+// }
+// ab(5, uf(), a);
+
+// var a = 11;
+
+// function A() {
+//     var b = 12;
+//     function B() {
+//         var c = 23;
+//         console.log(c);
+//     }
+//     function C() {
+//         var d = 56;
+//         console.log(d);
+//     }
+//     console.log(b);
+//     D(b);
+//     B();
+//     C();
+// }
+
+// function D(n) {
+//     return n + a;
+// }
+// A();
+
+// function Parson(name) {
+//     this.name;
+// }
+// let p1 = new Parson("Md Ranju");
+// console.log(p1);
+
+// let sm=10
+// for (let i = 1; i <= 10; i++){
+//     console.log(`${i} x ${sm} = ${i*sm} `)
+// }
+
+// function my(name) {
+//     if (!name) {
+//         return 'please enter a value'
+//     }
+//   return name*name
+// }
+// console.log(my());
+
+// let myObj = {
+//     name: 'Md Ranju',
+//     myFunb: function() {
+//         setTimeout( () =>{
+//             console.log(this);
+//             console.log(`Hello ${this.name}`)
+//         },1000)
+//     }
+// }
+// myObj.myFunb()
+
+// let myObj = {
+//     a: 10,
+//     b: 20,
+//     c: 30,
+//     d: 40,
+//     print() {
+//         console.log(this);
+//     },
+// };
+
+// myObj.print();
+// console.log(myObj);
+
+// let myObj2 = {
+//     ...myObj,
+// };
+// console.log(myObj2);
+
+// let s1 = Symbol("Hello Demo Symbol");
+// let s2 = Symbol(1);
+
+// console.log(s1, s2);
+
+// let myName = "Md Ranju";
+
+// let etr = myName[Symbol.iterator]();
+
+// console.log(etr.next());
+// console.log(etr.next());
+// console.log(etr.next());
+// console.log(etr.next());
+// console.log(etr.next());
+// console.log(etr.next());
+// console.log(etr.next());
+// console.log(etr.next());
+// console.log(etr.next());
+
+// for (let i of myName) {
+//     console.log(i);
+// }
+
+// console.log("Hello Bangladesh ");
+
+// class Carcal {
+//     constructor(redius) {
+//         this.redius = redius;
+//         this.fun = function () {
+//             console.log("Hello");
+//         };
+//     }
+
+//     drow() {
+//         console.log("Drowing...");
+//     }
+// }
+
+// let p1 = new Carcal(52);
+
+// console.log(p1.fun());
+
+// function newFunction(man) {
+//     console.log(man);
+// }
+// drow("Md Ranju");
+
+// function drow(h1, cb) {
+//     console.log(h1);
+//     cb(newFunction("Hi "));
+// }
+
+// let myObj = {
+//     name: "Hello",
+//     age: 19,
+// };
+// console.log(myObj);
+
+// let myObj2 = Object({ name: "Ranju", age: 19 });
+// console.log(myObj2);
+
+// function mySet() {
+//     console.log("Hello I am vary week in programming  please help me...:(");
+// }
+
+// setTimeout(mySet, 2000);
+
+// console.log("Hello");
+// console.log("Hi Md Ranju");
+
+// function myFunc(name) {
+//     setTimeout(function () {
+//         // return name;
+//         console.log(name);
+//     }, 2000);
+// }
+
+// let jdafd = myFunc("Md Ranju");
+// console.log(jdafd);
+
+// let xhr = new XMLHttpRequest();
+// xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
+
+// xhr.onreadystatechange = function (e) {
+//     if (xhr.readyState === 4) {
+//         if (xhr.status === 200) {
+//             let response = JSON.parse(xhr.response);
+//             console.log(response);
+//         } else {
+//             console.log(xhr.status);
+//         }
+//     }
+// };
+
+// xhr.send();
+
+// function getRequest(url, callback) {
+//     let xhr = new XMLHttpRequest();
+//     xhr.open("GET", url);
+
+//     xhr.onreadystatechange = function (e) {
+//         if (xhr.readyState === 4) {
+//             if (xhr.status === 200) {
+//                 let response = JSON.parse(xhr.response);
+//                 callback(null, response);
+//             } else {
+//                 callback(xhr.status, null);
+//             }
+//         }
+//     };
+//     xhr.send();
+// }
+
+// getRequest("https://jsonplaceholder.typicode.com/users", (err, res) => {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         let a = 1;
+//         res.forEach((r) => document.write(r.id + " " + r.email + "<br/>"));
+//     }
+// });
+
+// class Rectangle {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+// }
+// console.log(Rectangle);
+
+// let reg1 = new Rectangle(52, 203);
+
+// console.log(reg1);
+
+// class Rectangle2 {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+// }
+
+// class {
+//     eat(name) {
+//         return name + " is eating";
+//     }
+//     sleep(name) {
+//         return name + " is sleeping";
+//     }
+//     paly(name) {
+//         return name + " is palying";
+//     }
+// };
+
+// function Parson(name, age) {
+//     // let parson = Object.create(Parson.prototype);
+//     this.name = name;
+//     this.age = age;
+//     // return parson;
+// }
+// Parson.prototype = {
+//     eat() {
+//         return this.name + " is eating";
+//     },
+//     sleep() {
+//         return this.name + " is sleeping";
+//     },
+//     paly() {
+//         return this.name + " is palying";
+//     },
+// };
+
+// let sakib = new Parson("Md Ranju", 19);
+// console.log(sakib);
+
+// function Parson(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+
+// function MySelf(where, country) {
+//     Parson.call(this);
+//     this.where = where;
+//     this.country = country;
+// }
+// Parson.prototype = {
+//     eat: function () {
+//         `${this.name} is eating`;
+//     },
+// };
+
+// let ranju = new Parson("Ranju", 19);
+
+// console.log(ranju);
+
+// async function fatchData() {
+//    try {
+//       let res = await fetch("./JsonData/users.json");
+//       let data = await res.json();
+//       let users = data.map((value) => {
+//          return `Name is: ${value.name}`;
+//       });
+//       console.log(users);
+//    } catch (e) {
+//       console.log(e);
+//    }
+// }
+// fatchData();
+
+// function add(a, b) {
+//    return a + b;
+// }
+
+// function malt(a, b, func) {
+//    let c = a + b;
+//    let d = a - b;
+
+//    return function () {
+//       let m = func(a, b);
+//       return c * d * m;
+//    };
+// }
+
+// let newMalt = malt(4, 3, add);
+// console.log(newMalt());
+
+// function sample(a, b, cb) {
+//    let c = a + b;
+//    let d = a - b;
+//    let res = cb(c, d);
+//    return res;
+// }
+
+// let result = sample(5, 8, (a, b) => {
+//    return a + b;
+// });
+// console.log(result);
+
+// function add(b, c) {
+//    return b - c;
+// }
+
+// let res = sample(5, 8, add);
+// console.log(res);
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.forEach(function (value) {
+//    console.log(value * value);
+// });
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function forEcah(array, cb) {
+//    for (let i = 0; i < array.length; i++) {
+//       cb(array[i], i, array);
+//    }
+// }
+
+// forEcah(arr, function (value, index, arr) {
+//    arr[index] = value + 5;
+//    console.log(value + 5);
+// });
+
+// console.log(arr);
+
+// const arr8 = require("./app");
+
+// console.log(arr8);
+
+// arr8.forEach(function (value) {
+//    console.log(`Hello Mr.${value} nice to meet you`);
+// });
+// let arr = [1, 2, 3];
+
+// let sqrArr = arr.map(function (value) {
+//    return Math.floor(Math.random() * 100000000);
+// });
+
+// console.log(arr);
+// console.log(sqrArr);
+
+// console.log(global);
+
+// const http = require("http");
+
+// const server = http.createServer((req, res) => {
+//    if (req.url === "/") {
+//       res.write("Hello Node js");
+//       res.end();
+//    } else if (req.url === "/about") {
+//       res.write("Hello Node js this about page");
+//       res.end();
+//    } else {
+//       res.write('Sorry not found ')
+//    }
+// });
+
+// server.listen(3000, () => {
+//    console.log("Server is runing");
+// });
+
+// console.log(module);
+// let mac1 = "18:c0:4d:48:6f:d5";
+// let mac2 = "18:c0:4d:48:6f:d5";
+// console.log(mac1 === mac2);
+
+// const path = require("path");
+// const os = require("os");
+// const fs = require("fs");
+
+// console.log(os.networkInterfaces());
+// console.log(path.parse(__dirname));
+
+// console.log(path.join("user", "local", "mdranju", "index.js"));
+
+// let testObj = {
+//    name: "Md Ranju",
+//    email: "mdranju23@gmail.com",
+//    country: "Bangladesh",
+//    address: {
+//       city: "Rajshahi",
+//       stert: "Rajpara",
+//       gpo: 6000,
+//       area: "Shreerampur",
+//    },
+// };
+
+// let data = JSON.stringify(testObj);
+
+// console.log(
+//    fs.writeFile("myJson.json", data, (err) => {
+//       if (err) {
+//          console.log(err);
+//       } else {
+//          console.log("File write successful");
+//       }
+//    })
+// );
+
+// fs.readFile("./JsonData/users.json", (err, data) => {
+//    if (err) {
+//       console.log(err);
+//    } else {
+//       let obj = JSON.parse(data);
+//       // console.log(obj.name);
+//       obj.map((value) => {
+//          console.log(value.name);f
+//       });
+//    }
+// });
+
+// const testData = require("./app");
+// const express
+
+// testData.myArr.forEach((value) => {
+//    console.log(`this is = ${value}`);
+// });
+
+// testData.test(20, 10);
+
+// const fs = require("fs");
+
+// fs.appendFile("hiMan.txt", " Hello Ranju how are you", (err, data) => {
+//    if (err) {
+//       console.log(err.message);
+//    } else {
+//       console.log("File write successful");
+//    }
+// });
+
+// fs.readFile("hiMan.txt", (err, data) => {
+//    if (err) {
+//       console.log(err.message, "File not found");
+//    } else {
+//       let myData = data.toString();
+//       console.log(myData);
+//    }
+// });
+// fs.exists("hiMan.txt", (exists) => {
+//    if (exists) {
+//       console.log(exists);
+//    } else {
+//       console.log("File not found");
+//    }
+// });
+
+// fs.link("hiMan.txt", "Man.txt", (err, data) => {
+//    console.log(data);
+// });
+
+// fs.unlink("Man.txt", (data) => {
+//    console.log(data);
+// });
+
+// const EventEmitter = require("events");
+// const emitter = new EventEmitter();
+
+// emitter.on("BellRing", () => {
+//    console.log("sir you need to run");
+// });
+
+// setTimeout(() => {
+//    emitter.emit("BellRing");
+// }, 2000);
+
+// const fs = require("fs");
+
+// const ourRedStream = fs.createReadStream(`${__dirname}/hiMan.txt`);
+// ourRedStream.on("data", (chank) => {
+//    console.log(chank.toString());
+// });
+
+// const myMath = require("./app");
+
+// console.log(myMath.addMaltplyNumber.myArr);
+
+// const myArr = [1, 2, 3];
+// const str = "md ranju";
+// const num = 123;
+// const myObj = {
+//    name: "Md Ranju",
+//    age: 19,
+// };
+// const empty = "";
+
+// if (typeof myArr === "object") {
+//    console.log("yes this is array");
+// } else {
+//    console.log("No this is not Array..:(");
+// }
+// if (typeof str === "string") {
+//    console.log("yes this is string");
+// } else {
+//    console.log("No this is not string..:(");
+// }
+// if (typeof num === "number") {
+//    console.log("yes this is number");
+// } else {
+//    console.log("No this is not number..:(");
+// }
+// if (typeof myObj === "object") {
+//    console.log("yes this is object");
+// } else {
+//    console.log("No this is not object..:(");
+// }
+// if (empty === "") {
+//    console.log("yes this is empty");
+// } else {
+//    console.log("No this is not empty..:(");
+// }
+// else if (typeof str === "string") {
+//    console.log("yes this is srting");
+// } else if (typeof num === "number") {
+//    console.log("yes this is number");
+// } else if (typeof myObj === "object") {
+//    console.log("yes this is object");
+// } else {
+//    console.log("there are some problom");
+// }
+
+// console.log(typeof myObj);
+
+console.log(17 + 17);
